@@ -1,4 +1,8 @@
-<html><!-- HEADER --><head>
+<!DOCTYPE HTML>
+<html>
+
+<!-- HEADER -->
+<head>
 
 <meta charset="UTF-8">
 
@@ -135,6 +139,15 @@ PAL c
 234,253,239
 NAME End4
 
+PAL d
+19,19,19
+234,253,239
+245,138,49
+234,253,239
+234,253,239
+62,59,103
+166,70,88
+
 ROOM 0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,a,a,a,a,a,a,a,a,a,a,a,a,a,a,0
@@ -175,8 +188,7 @@ ROOM 1
 NAME Room1
 ITM 2 11,12
 ITM 3 6,11
-EXT 6,11 9 6,12
-PAL 1
+PAL d
 
 ROOM 2
 0,0,3w,3x,0,0,1y,0,0,5x,3y,3,0,3z,0,40
@@ -200,7 +212,7 @@ EXT 2,5 6 13,5
 EXT 13,5 7 2,12
 EXT 13,6 7 2,13
 EXT 2,6 6 13,6
-PAL 1
+PAL d
 
 ROOM 3
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -290,7 +302,7 @@ EXT 13,5 2 2,5
 EXT 2,6 9 2,13
 EXT 2,5 9 2,12
 EXT 13,6 2 2,6
-PAL 1
+PAL d
 
 ROOM 7
 0,0,3w,0,0,0,0,0,0,0,0,0,0,3z,0,40
@@ -312,7 +324,7 @@ ROOM 7
 NAME Room2.2
 EXT 2,12 2 13,5
 EXT 2,13 2 13,6
-PAL 1
+PAL d
 
 ROOM 8
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -353,7 +365,7 @@ ROOM 9
 NAME Room1 copy 1
 EXT 2,13 6 2,6
 EXT 2,12 6 2,5
-PAL 1
+PAL d
 
 ROOM a
 0,0,2,0,0,0,0,0,0,0,0,3,0,0,0,0
@@ -373,7 +385,7 @@ ROOM a
 3u,dx,2,dx,dx,dx,dx,dx,dx,dx,dx,dx,dx,dx,dx,2f
 0,0,0,0,0,0,0,0,0,0,0,0,3v,0,0,0
 NAME Room1 copy 2
-PAL 1
+PAL d
 
 ROOM b
 0,0,3w,3x,0,0,1y,0,0,5x,3y,3,0,3z,0,40
@@ -395,7 +407,7 @@ ROOM b
 NAME Room2 copy 1
 EXT 13,5 c 2,12
 EXT 13,6 c 2,13
-PAL 1
+PAL d
 
 ROOM c
 0,0,3w,0,0,0,0,0,0,0,0,0,0,3z,0,40
@@ -420,7 +432,7 @@ EXT 2,12 2 13,5
 EXT 2,13 2 13,6
 EXT 2,12 b 13,5
 EXT 2,13 b 13,6
-PAL 1
+PAL d
 
 ROOM d
 0,0,3w,0,0,0,0,0,0,0,0,0,0,3z,0,40
@@ -695,10 +707,10 @@ TIL 19
 1,1,1,1,1,1,1,1
 0,0,0,0,0,0,0,0
 1,1,1,1,1,1,1,1
-0,0,0,1,1,1,1,1
-1,1,1,0,1,1,1,1
-0,0,1,1,0,1,1,1
-1,1,0,1,0,1,1,1
+5,5,5,1,1,1,1,1
+1,1,1,5,1,1,1,1
+5,5,1,1,5,1,1,1
+1,1,5,1,5,1,1,1
 NAME Room1 (2,5)
 COL 1
 
@@ -893,7 +905,7 @@ TIL 34
 0,1,1,1,0,0,1,1
 0,1,1,0,0,1,1,0
 NAME Room1 (13,11)
-WAL true
+WAL false
 COL 1
 
 TIL 35
@@ -901,10 +913,10 @@ TIL 35
 0,1,1,0,1,1,0,1
 1,0,0,1,0,0,1,1
 1,1,1,1,1,1,1,1
-0,0,0,1,1,1,0,1
-1,1,1,0,1,1,1,1
-0,0,1,1,0,1,1,1
-1,1,0,1,0,1,1,1
+5,5,5,1,1,1,0,1
+1,1,1,5,1,1,1,1
+5,5,1,1,5,1,1,1
+1,1,5,1,5,1,1,1
 NAME Room1 (2,12)
 COL 1
 
@@ -1059,8 +1071,8 @@ TIL 48
 0,0,0,1,1,1,1,0
 1,1,1,1,1,0,0,1
 1,1,1,1,1,1,1,1
-0,0,0,0,0,1,1,0
-1,1,1,1,0,1,1,0
+0,0,0,0,0,1,1,5
+1,1,1,1,0,1,1,5
 NAME Room2 (4,2)
 COL 1
 
@@ -1071,8 +1083,8 @@ TIL 49
 1,1,0,1,0,0,0,1
 1,1,1,1,1,1,1,0
 1,1,1,1,0,1,1,1
-0,0,0,0,1,1,0,1
-1,1,1,0,1,1,0,1
+5,5,5,5,1,1,0,1
+1,1,1,5,1,1,0,1
 NAME Room2 (5,2)
 COL 1
 
@@ -1142,27 +1154,27 @@ WAL true
 COL 1
 
 TIL 55
-1,0,0,0,0,0,1,0
-0,0,1,1,1,1,1,1
-0,0,0,0,0,0,0,0
-0,1,1,1,1,1,1,1
-0,1,0,0,1,1,1,1
-0,1,1,1,1,1,1,1
-0,0,0,0,0,0,0,0
-0,1,1,1,1,1,1,1
+1,5,5,5,5,5,5,5
+5,5,1,1,1,1,1,1
+5,5,5,5,5,5,5,5
+5,1,1,1,1,1,1,1
+5,1,5,5,1,1,1,1
+5,1,1,1,1,1,1,1
+5,5,5,5,5,5,5,5
+5,1,1,1,1,1,1,1
 NAME Room2 (12,4)
-WAL true
+WAL false
 COL 1
 
 TIL 56
-0,0,1,0,1,0,1,1
-1,0,1,1,1,1,0,1
-0,1,0,1,1,1,1,1
-0,1,0,1,0,1,0,1
-0,1,0,1,1,0,1,1
-0,1,0,1,0,1,1,1
-0,1,0,1,1,1,1,1
-0,0,0,0,0,0,0,0
+5,5,5,3,1,3,3,3
+1,5,5,1,1,1,3,1
+5,1,5,1,1,1,1,1
+5,1,5,1,3,3,3,3
+5,1,5,1,3,3,1,1
+5,1,5,1,3,1,1,1
+5,1,5,1,1,1,1,1
+5,3,5,0,0,0,0,0
 NAME Room2 (13,4)
 WAL true
 COL 1
@@ -1328,16 +1340,16 @@ NAME Room2 (6,9)
 COL 1
 
 TIL 70
-0,1,0,1,0,1,0,1
-1,0,1,1,1,0,1,1
-0,0,0,1,0,0,0,0
+5,5,5,5,5,5,5,3
+1,3,3,3,3,3,3,3
+3,3,3,3,3,3,3,3
 0,0,0,0,0,0,0,0
 1,1,1,1,1,1,1,1
 0,0,0,0,0,0,0,0
 1,1,1,1,1,1,1,1
 0,0,0,0,0,0,0,0
 NAME Room2 (8,11)
-WAL true
+WAL false
 COL 1
 
 TIL 71
@@ -1354,27 +1366,27 @@ WAL true
 COL 1
 
 TIL 72
-1,1,1,1,1,0,0,1
-1,1,1,0,1,0,0,0
-1,1,1,1,0,0,0,0
-1,1,1,1,1,1,0,1
-1,1,1,0,0,0,0,0
-1,1,1,0,1,1,1,1
-1,1,1,0,1,1,1,1
-0,0,1,0,0,1,1,1
+1,1,1,1,1,5,5,1
+1,1,1,5,1,5,5,5
+1,1,1,1,5,5,5,5
+1,1,1,1,1,1,5,1
+1,1,1,5,5,5,5,5
+1,1,1,5,1,1,1,1
+1,1,1,5,1,1,1,1
+0,0,1,5,5,1,1,1
 NAME Room2 (10,11)
 WAL false
 COL 1
 
 TIL 73
-0,0,1,1,1,1,1,1
-0,1,1,1,1,1,1,1
+5,5,1,1,1,1,1,1
+5,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,0
 1,1,1,1,1,1,0,1
-0,0,1,1,1,1,1,0
-1,0,1,1,1,1,0,1
-1,0,1,1,1,1,0,1
-0,0,1,0,0,1,0,0
+5,5,1,1,1,1,1,0
+1,5,1,1,1,1,0,1
+1,5,1,1,1,1,0,1
+5,5,1,0,0,1,0,0
 NAME Room2 (11,11)
 WAL true
 COL 1
@@ -1410,10 +1422,10 @@ TIL 76
 1,1,1,1,1,1,1,0
 1,1,1,1,1,1,1,0
 1,1,1,1,1,1,1,0
-0,0,0,1,1,1,1,1
-1,1,1,0,1,1,1,1
-0,0,1,1,0,1,1,1
-1,1,0,1,0,1,1,1
+5,5,5,1,1,1,1,1
+1,1,1,5,1,1,1,1
+5,5,1,1,5,1,1,1
+1,1,5,1,5,1,1,1
 NAME Room2 (2,12)
 COL 1
 
@@ -1815,39 +1827,39 @@ COL 1
 
 TIL k
 1,1,1,1,1,1,1,1
-1,1,1,1,1,1,0,0
-1,1,1,1,1,0,1,1
-1,1,1,1,0,0,0,0
-1,1,1,1,0,0,1,1
-1,1,1,1,0,1,0,0
-1,1,0,1,0,0,0,0
-1,1,1,1,0,0,0,0
+1,1,1,1,1,1,5,5
+1,1,1,1,1,5,1,1
+1,1,1,1,5,5,5,5
+1,1,1,1,5,5,1,1
+1,1,1,1,5,1,5,5
+1,1,0,1,5,5,5,5
+1,1,1,1,5,5,5,5
 NAME Room1 (3,3)
 WAL true
 COL 1
 
 TIL l
 1,1,1,1,1,1,1,1
-0,0,1,0,0,1,0,0
-1,1,1,1,1,0,0,1
-0,0,0,0,0,1,0,0
-1,0,1,1,1,1,0,1
-0,0,0,0,1,0,0,0
-0,0,0,1,0,1,0,1
-0,0,1,1,0,1,0,0
+5,5,1,5,5,1,5,5
+1,1,1,1,1,5,5,1
+5,5,5,5,5,1,5,5
+1,5,1,1,1,1,5,1
+5,5,5,5,1,5,5,5
+5,5,5,1,5,5,5,1
+5,5,1,1,5,1,5,5
 NAME Room1 (4,3)
 WAL true
 COL 1
 
 TIL m
 1,1,1,1,1,1,1,1
-1,0,0,0,0,1,1,1
-0,0,1,0,0,1,1,1
-0,0,0,1,0,1,1,1
-1,0,1,1,0,1,1,1
-0,0,1,0,0,0,1,1
-1,0,1,1,0,1,1,1
-0,0,0,1,0,0,0,1
+1,5,5,5,5,1,1,1
+5,5,1,5,5,1,1,1
+5,5,5,1,5,1,1,1
+1,5,1,1,5,1,1,1
+5,5,1,5,5,5,1,1
+1,5,1,1,5,1,1,1
+5,5,5,1,5,5,5,1
 NAME Room1 (5,3)
 COL 1
 
@@ -1971,9 +1983,9 @@ WAL true
 COL 1
 
 TIL w
-1,1,1,0,0,1,0,0
-0,1,0,1,0,1,1,1
-1,0,1,1,0,0,0,0
+1,1,1,0,5,1,5,5
+0,1,0,1,5,1,1,1
+1,0,1,1,5,5,5,5
 0,0,1,1,1,1,1,1
 0,0,0,0,0,0,0,0
 0,1,1,1,1,1,1,1
@@ -1984,9 +1996,9 @@ WAL true
 COL 1
 
 TIL x
-0,1,1,0,0,1,0,1
-1,1,1,1,1,1,0,0
-0,0,0,0,0,0,0,0
+5,1,1,5,5,1,5,1
+1,1,1,1,1,1,5,5
+5,5,5,5,5,5,5,5
 1,1,1,1,1,1,1,1
 0,0,0,0,0,0,0,0
 1,1,1,1,1,1,0,1
@@ -1997,9 +2009,9 @@ WAL false
 COL 1
 
 TIL y
-1,0,1,0,0,1,1,0
-0,0,0,0,1,1,0,0
-0,0,0,1,1,0,0,0
+1,5,1,5,5,1,1,0
+5,5,5,5,1,1,0,0
+5,5,5,1,1,0,0,0
 1,1,1,1,1,1,1,1
 0,0,0,0,0,0,0,0
 1,0,1,1,1,0,1,1
@@ -2019,7 +2031,7 @@ TIL z
 0,0,0,0,0,1,0,0
 1,1,1,1,1,1,0,1
 NAME Room1 (6,4)
-WAL true
+WAL false
 COL 1
 
 TIL 1a
@@ -2147,10 +2159,10 @@ TIL 1k
 1,1,1,1,1,1,1,1
 1,1,0,1,0,0,0,0
 1,1,1,0,1,1,1,1
-1,1,1,1,1,0,0,0
-1,1,1,1,0,1,1,1
-1,1,1,0,1,1,0,0
-1,1,1,0,1,0,1,1
+1,1,1,1,1,5,5,5
+1,1,1,1,5,1,1,1
+1,1,1,5,1,1,5,5
+1,1,1,5,1,5,1,1
 NAME Room1 (13,5)
 COL 1
 
@@ -2168,11 +2180,11 @@ WAL true
 COL 1
 
 TIL 1m
-0,1,0,1,0,1,1,1
-1,1,0,1,0,0,1,1
-0,0,1,1,0,1,1,1
-1,1,1,0,1,1,1,1
-0,0,0,1,1,1,1,1
+5,1,5,1,5,1,1,1
+1,1,5,1,5,0,1,1
+5,5,1,1,5,1,1,1
+1,1,1,5,1,1,1,1
+5,5,5,1,1,1,1,1
 1,1,1,1,1,1,1,1
 0,0,0,0,0,0,0,1
 1,1,1,1,1,1,1,1
@@ -2264,11 +2276,11 @@ NAME Room1 (11,6)
 COL 1
 
 TIL 1u
-1,1,1,0,1,0,1,0
-1,1,1,0,1,0,1,1
-1,1,1,0,1,1,1,0
-1,1,1,1,0,1,1,1
-1,1,1,1,1,0,0,0
+1,1,1,5,1,5,1,5
+1,1,1,5,1,5,1,1
+1,1,1,5,1,1,5,5
+1,1,1,1,5,1,1,1
+1,1,1,1,1,5,5,5
 1,1,1,1,1,1,1,1
 0,0,1,1,0,1,0,0
 1,1,1,1,1,1,1,1
@@ -2384,10 +2396,10 @@ TIL 2c
 1,1,1,1,1,1,1,1
 0,1,0,1,1,1,1,1
 1,0,1,1,1,1,1,1
-1,0,1,0,1,1,1,0
+1,0,1,0,1,1,1,5
 1,0,1,1,1,1,1,1
-1,0,1,1,1,1,1,0
-1,0,1,1,1,1,1,0
+1,0,1,1,1,1,1,5
+1,0,1,1,1,1,1,5
 NAME Room1 (11,9)
 COL 1
 
@@ -2396,11 +2408,12 @@ TIL 2d
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
-1,0,0,0,0,0,0,0
-0,1,1,1,1,1,1,1
-1,0,0,0,1,1,1,1
-1,0,0,0,1,0,0,0
+1,5,5,5,5,5,5,5
+5,1,1,1,1,1,1,1
+1,5,5,5,1,1,1,1
+1,5,5,5,1,5,5,5
 NAME Room1 (12,9)
+WAL true
 COL 1
 
 TIL 2e
@@ -2408,10 +2421,10 @@ TIL 2e
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
-0,0,0,0,1,0,1,1
-1,1,1,1,0,1,1,1
-1,0,0,0,1,0,1,1
-1,0,0,0,1,0,1,1
+5,5,5,5,1,5,1,1
+1,1,1,1,5,1,1,1
+1,5,5,5,1,5,1,1
+1,5,5,5,1,5,1,1
 NAME Room1 (13,9)
 COL 1
 
@@ -2467,13 +2480,13 @@ WAL true
 COL 1
 
 TIL 2j
-0,0,0,1,1,5,1,1
-0,1,0,0,0,5,1,1
-0,1,0,1,0,5,1,1
-0,0,0,1,1,5,1,1
-1,1,0,1,0,5,1,1
-1,1,0,1,0,5,1,1
-0,0,0,0,1,5,1,1
+0,0,0,1,1,0,1,1
+0,1,0,0,0,0,1,1
+0,1,0,1,0,0,1,1
+0,0,0,1,1,0,1,1
+1,1,0,1,0,0,1,1
+1,1,0,1,0,0,1,1
+0,0,0,0,1,0,1,1
 1,1,0,1,1,1,1,1
 NAME Room1 (5,10)
 WAL true
@@ -2497,10 +2510,10 @@ TIL 2l
 0,0,0,0,0,0,0,0
 0,0,1,0,0,0,1,0
 0,0,0,0,0,0,0,0
-1,1,1,0,1,1,1,1
-1,1,0,1,0,0,1,0
-1,1,1,1,0,1,0,1
-1,1,1,1,0,1,0,1
+1,1,1,5,1,1,1,1
+1,1,5,1,5,5,1,5
+1,1,1,1,5,1,5,1
+1,1,1,1,5,1,5,1
 NAME Room1 (7,10)
 WAL true
 COL 1
@@ -2512,8 +2525,8 @@ TIL 2m
 0,0,0,0,0,0,0,1
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
-0,1,1,0,0,0,0,1
-0,0,0,0,1,1,0,0
+5,1,1,5,5,5,5,1
+5,5,5,5,1,1,5,5
 NAME Room1 (8,10)
 WAL true
 COL 1
@@ -2544,12 +2557,12 @@ NAME Room1 (10,10)
 COL 1
 
 TIL 2p
-1,0,1,1,1,1,1,0
-1,0,1,1,1,1,1,0
-1,0,1,1,1,1,1,0
-0,0,1,1,1,1,1,0
+1,0,1,1,1,1,1,5
+1,0,1,1,1,1,1,5
+1,0,1,1,1,1,1,5
+0,0,1,1,1,1,1,5
 1,1,1,1,1,1,1,1
-1,1,0,1,1,1,1,0
+1,1,0,1,1,1,1,5
 1,1,1,1,1,1,1,1
 0,0,0,1,1,1,1,1
 NAME Room1 (11,10)
@@ -2557,12 +2570,12 @@ WAL true
 COL 1
 
 TIL 2q
-1,1,0,1,1,1,0,0
-1,0,0,0,1,1,0,1
-1,0,0,0,0,0,0,0
-1,1,0,1,1,0,0,0
-0,1,0,1,1,0,0,1
-1,1,0,0,0,0,0,0
+1,1,5,1,1,1,5,5
+1,5,5,5,1,1,5,1
+1,5,5,5,5,5,5,5
+1,1,5,1,1,5,5,5
+5,1,5,1,1,5,5,1
+1,1,5,5,5,5,5,5
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
 NAME Room1 (12,10)
@@ -2570,12 +2583,12 @@ WAL true
 COL 1
 
 TIL 2r
-1,1,0,1,1,0,1,1
-1,0,0,0,1,0,1,1
-0,0,0,0,1,0,1,1
-1,1,0,1,1,0,1,1
-1,1,0,1,0,1,1,1
-0,0,0,0,1,0,1,1
+1,1,5,1,1,5,1,1
+1,5,5,5,1,5,1,1
+5,5,5,5,1,5,1,1
+1,1,5,1,1,5,1,1
+1,1,5,1,5,1,1,1
+5,5,5,5,1,5,1,1
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
 NAME Room1 (13,10)
@@ -2660,19 +2673,10 @@ WAL false
 COL 1
 
 TIL 2y
-1,0,1,1,0,1,0,1
-0,1,1,0,0,1,0,0
-0,1,0,0,1,1,1,1
-0,1,0,0,0,0,0,0
-0,0,0,1,0,1,1,1
-1,0,0,0,1,0,1,0
-1,0,0,0,1,1,1,1
-1,0,0,1,1,1,1,1
->
-1,0,1,1,0,1,0,1
-0,1,1,0,0,1,0,0
-0,1,0,0,1,1,1,1
-0,1,0,0,0,0,0,0
+1,5,1,1,5,1,5,1
+5,1,1,5,5,1,5,5
+5,1,5,5,1,1,1,1
+5,1,5,5,5,5,5,5
 0,0,0,1,0,1,1,1
 1,0,0,0,1,0,1,0
 1,0,0,0,1,1,1,1
@@ -2682,8 +2686,8 @@ WAL true
 COL 1
 
 TIL 2z
-0,1,0,1,1,1,0,1
-0,1,0,0,1,0,1,0
+5,1,5,1,1,1,5,1
+5,1,5,5,1,5,1,5
 1,1,1,1,1,1,1,1
 0,0,0,0,0,0,0,0
 1,1,1,0,0,0,0,1
@@ -2812,11 +2816,11 @@ NAME Room1 (0,13)
 COL 1
 
 TIL 3j
-0,1,0,1,0,1,1,1
-1,1,0,1,0,1,1,1
-0,0,1,1,0,1,1,1
-1,1,1,0,1,1,1,1
-0,0,0,1,1,1,1,1
+5,1,5,1,5,1,1,1
+1,1,5,1,5,1,1,1
+5,5,1,1,5,1,1,1
+1,1,1,5,1,1,1,1
+5,5,5,1,1,1,1,1
 3,1,1,1,1,1,1,1
 0,3,1,1,1,1,1,1
 0,0,1,1,1,1,1,1
@@ -3154,26 +3158,26 @@ NAME Room2 (3,3)
 COL 1
 
 TIL 4k
-1,0,0,1,0,1,1,0
-1,1,1,1,0,1,1,0
+1,0,0,1,0,1,1,5
+1,1,1,1,0,1,1,5
 1,0,0,1,0,1,1,1
 1,1,1,1,0,1,1,0
 1,1,0,1,0,1,1,1
 1,0,1,1,0,1,1,1
-1,1,0,1,0,1,1,0
-1,0,1,1,0,1,1,0
+1,1,0,1,0,1,1,5
+1,0,1,1,0,1,1,5
 NAME Room2 (4,3)
 COL 1
 
 TIL 4l
-1,1,1,0,1,1,0,1
-0,0,0,0,1,1,0,1
+1,1,1,5,1,1,0,1
+5,5,5,5,1,1,0,1
 1,1,1,1,1,1,0,1
 1,0,0,0,1,1,0,1
 1,1,1,1,1,1,0,1
 1,1,1,1,1,1,0,1
-0,0,0,0,1,1,0,1
-1,1,1,0,1,1,0,1
+5,5,5,5,1,1,0,1
+1,1,1,5,1,1,0,1
 NAME Room2 (5,3)
 WAL true
 COL 1
@@ -3260,6 +3264,7 @@ TIL 4s
 1,1,1,0,1,1,1,1
 1,1,1,1,1,1,1,1
 NAME Room2 (12,3)
+WAL true
 COL 1
 
 TIL 4t
@@ -3269,8 +3274,8 @@ TIL 4t
 1,1,1,1,1,1,1,1
 1,1,1,0,1,0,1,1
 1,1,1,1,1,1,1,1
-1,0,1,0,1,1,1,1
-1,0,0,1,1,1,0,1
+1,3,1,3,1,1,1,1
+1,3,3,1,1,1,3,3
 NAME Room2 (13,3)
 COL 1
 
@@ -3313,8 +3318,8 @@ WAL true
 COL 1
 
 TIL 4x
-1,1,1,1,0,1,1,0
-0,0,0,0,0,1,1,0
+1,1,1,1,0,1,1,5
+0,0,0,0,0,1,1,5
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
 0,0,0,1,1,1,0,0
@@ -3326,8 +3331,8 @@ WAL true
 COL 1
 
 TIL 4y
-1,1,1,0,1,1,0,1
-0,0,0,0,1,1,0,1
+1,1,1,5,1,1,0,1
+5,5,5,5,1,1,0,1
 1,1,1,1,1,1,1,1
 1,1,1,0,1,1,1,1
 0,1,1,0,0,1,0,1
@@ -3335,8 +3340,8 @@ TIL 4y
 1,1,1,1,1,1,1,1
 0,0,0,0,0,0,0,0
 >
-1,1,1,1,1,1,0,1
-0,0,0,0,1,1,0,1
+1,1,1,5,1,1,0,1
+5,5,5,5,1,1,0,1
 1,1,1,1,1,1,1,1
 1,1,1,0,1,1,1,1
 0,1,1,0,0,1,0,1
@@ -3456,9 +3461,9 @@ NAME Room2 (11,5)
 COL 1
 
 TIL 5i
-0,1,0,0,1,1,1,1
-0,1,1,1,1,1,1,1
-0,0,0,0,0,0,0,0
+5,1,5,5,1,1,1,1
+5,1,1,1,1,1,1,1
+5,5,5,5,5,5,5,5
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
@@ -3468,14 +3473,14 @@ NAME Room2 (12,5)
 COL 1
 
 TIL 5j
-0,1,1,1,1,1,1,1
-0,1,0,1,1,1,1,1
-0,0,0,1,0,0,0,0
+5,1,0,1,1,1,1,1
+5,1,5,1,1,1,1,1
+5,5,5,1,0,0,0,0
 1,1,1,1,1,1,1,1
-1,1,1,1,1,0,0,0
-1,1,1,1,0,1,1,1
-1,1,1,0,1,1,0,0
-1,1,1,0,1,0,1,1
+1,1,1,1,1,5,5,5
+1,1,1,1,5,1,1,1
+1,1,1,5,1,1,5,5
+1,1,1,5,1,5,1,1
 NAME Room2 (13,5)
 COL 1
 
@@ -3501,11 +3506,11 @@ NAME Room2 (0,6)
 COL 1
 
 TIL 5l
-1,1,0,1,0,1,1,1
-1,1,0,1,0,1,1,1
-0,0,1,1,0,1,1,13
-1,1,1,0,1,1,1,1
-0,0,0,1,1,1,1,1
+1,1,5,1,5,1,1,1
+1,1,5,1,5,1,1,1
+5,5,1,1,5,1,1,13
+1,1,1,5,1,1,1,1
+5,5,5,1,1,1,1,1
 1,1,1,1,1,1,1,1
 0,0,0,0,0,0,0,1
 1,1,1,1,1,1,1,1
@@ -3633,11 +3638,11 @@ NAME Room2 (12,6)
 COL 1
 
 TIL 5w
-1,1,1,0,1,0,1,0
-1,1,1,0,1,0,1,1
-1,1,1,0,1,1,0,0
-1,1,1,1,0,1,1,1
-1,1,1,1,1,0,0,0
+1,1,1,5,1,5,1,5
+1,1,1,5,1,5,1,1
+1,1,1,5,1,1,5,5
+1,1,1,1,5,1,1,1
+1,1,1,1,1,5,5,5
 1,1,1,1,1,1,1,1
 0,0,1,1,0,1,0,0
 1,1,1,1,1,1,1,1
@@ -3685,11 +3690,11 @@ TIL 6a
 1,1,1,1,1,1,0,1
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
-1,1,1,1,1,0,0,0
-1,1,1,1,1,0,1,0
-1,1,1,1,0,0,1,0
-1,1,1,1,0,1,0,1
-1,1,1,1,0,0,0,1
+1,1,1,1,1,3,3,3
+1,1,1,1,1,3,3,3
+1,1,1,5,5,5,5,5
+1,1,1,5,3,3,3,3
+1,1,1,5,3,5,3,1
 NAME Room2 (7,9)
 COL 1
 
@@ -3697,10 +3702,10 @@ TIL 6b
 1,1,1,1,0,1,0,1
 1,0,0,0,1,1,1,1
 1,1,1,1,1,1,1,1
-1,0,0,0,0,0,1,0
-0,1,0,1,0,1,0,0
-1,0,0,0,0,0,0,1
-1,1,1,1,1,1,1,1
+1,3,3,3,3,3,1,3
+3,1,3,3,3,3,3,3
+5,5,5,5,5,5,5,5
+1,1,1,1,1,1,1,3
 1,1,1,1,1,1,1,1
 NAME Room2 (8,9)
 COL 1
@@ -3709,11 +3714,11 @@ TIL 6c
 1,0,0,1,1,1,1,1
 1,0,0,1,1,1,1,0
 1,1,1,1,1,1,0,1
-0,1,1,1,1,1,0,1
-0,0,1,1,1,1,0,1
-0,1,0,1,1,1,1,0
-0,1,0,1,1,1,1,1
-0,0,0,1,1,1,1,1
+3,1,1,1,1,1,0,1
+3,3,1,1,1,1,0,1
+5,5,5,1,1,1,1,0
+3,1,5,1,1,1,1,1
+3,3,5,1,1,1,1,1
 NAME Room2 (9,9)
 COL 1
 
@@ -3784,9 +3789,10 @@ TIL 6i
 1,1,0,1,1,1,1,0
 1,0,1,1,1,1,1,1
 0,1,1,0,1,0,1,1
-1,1,1,1,0,0,0,0
-1,1,1,0,0,1,0,0
+1,1,1,1,3,3,3,3
+1,1,1,0,0,0,0,0
 NAME Room2 (3,10)
+WAL true
 COL 1
 
 TIL 6j
@@ -3796,8 +3802,8 @@ TIL 6j
 1,1,0,1,0,1,0,1
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
-0,0,1,0,0,0,0,0
-0,1,1,1,1,0,1,0
+3,3,3,3,3,3,3,3
+0,0,3,3,0,3,0,0
 NAME Room2 (4,10)
 COL 1
 
@@ -3808,33 +3814,33 @@ TIL 6k
 0,1,1,0,1,1,1,0
 1,1,1,1,1,1,0,0
 1,1,1,1,1,1,0,1
-0,0,0,0,1,0,0,0
-0,1,1,0,0,1,0,0
+3,3,3,3,1,3,0,3
+0,0,0,0,0,0,0,0
 NAME Room2 (5,10)
 COL 1
 
 TIL 6l
 1,1,1,1,1,1,1,1
-1,1,1,1,0,0,0,0
-1,1,1,0,1,1,1,1
-0,1,1,0,1,0,0,1
-1,0,1,0,1,0,0,1
-0,0,1,0,1,1,1,1
-1,0,0,0,1,0,0,1
-0,0,1,0,1,0,0,1
+1,1,1,1,5,5,5,5
+1,1,1,5,1,1,1,1
+0,1,1,5,1,5,5,1
+1,0,1,5,1,5,5,1
+0,0,1,5,1,1,1,1
+1,0,3,5,1,5,5,1
+0,0,0,5,1,5,5,1
 NAME Room2 (6,10)
 WAL true
 COL 1
 
 TIL 6m
-1,1,1,1,1,0,1,1
-1,1,1,1,0,1,1,1
-0,1,1,1,0,0,1,1
-0,1,1,1,0,1,1,1
-0,1,1,1,1,0,0,1
-0,1,1,1,1,0,0,0
-0,0,0,1,0,0,1,0
-0,1,1,0,0,1,0,0
+1,1,1,5,3,3,1,1
+1,1,1,5,3,3,1,1
+0,1,1,5,3,5,1,1
+0,1,1,5,3,3,5,1
+0,1,1,5,1,3,3,3
+0,1,1,5,5,5,5,5
+0,3,3,3,3,3,3,3
+0,0,0,0,0,0,0,0
 NAME Room2 (7,10)
 WAL true
 COL 1
@@ -3842,23 +3848,24 @@ COL 1
 TIL 6n
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
-1,1,1,1,1,1,1,1
-1,1,1,1,1,1,1,1
-0,1,1,0,1,0,1,0
-0,0,0,0,0,0,0,0
-1,0,1,0,1,0,1,0
-1,1,1,0,1,1,1,0
+1,1,1,1,1,1,1,5
+1,1,1,1,1,1,5,3
+3,1,3,3,3,3,1,3
+5,5,5,5,5,5,5,5
+1,3,5,5,1,3,1,3
+0,3,5,5,3,0,0,0
 NAME Room2 (8,10)
+WAL true
 COL 1
 
 TIL 6o
-1,1,0,1,1,1,1,1
-1,0,0,1,1,1,1,1
-0,1,0,1,1,1,1,1
-1,0,0,1,1,1,1,1
-1,0,1,1,1,1,1,1
-0,0,1,1,1,1,1,1
-1,0,0,1,1,1,1,1
+1,1,5,1,1,1,1,1
+5,3,5,1,1,1,1,1
+3,3,5,1,1,1,1,1
+3,3,5,1,1,1,1,1
+3,3,5,1,1,1,1,1
+5,5,5,1,1,1,1,1
+1,3,3,1,1,1,1,1
 0,0,0,0,0,0,1,1
 NAME Room2 (9,10)
 COL 1
@@ -3870,8 +3877,8 @@ TIL 6p
 1,1,1,0,1,1,1,0
 1,1,1,1,0,0,0,1
 1,1,1,1,1,1,1,1
-1,1,1,1,1,0,1,0
-1,1,0,1,0,0,0,0
+1,1,1,1,1,5,1,5
+1,1,5,1,5,5,5,5
 NAME Room2 (10,10)
 WAL true
 COL 1
@@ -3927,12 +3934,12 @@ COL 1
 TIL 6u
 1,1,1,1,1,0,1,1
 1,1,1,1,1,0,1,1
-1,1,1,1,1,0,1,0
-1,1,1,1,1,0,1,0
-1,1,1,1,1,0,1,0
-1,0,0,1,1,0,1,0
-0,1,1,0,0,0,1,0
-0,0,0,0,0,1,1,0
+1,1,1,1,1,0,1,5
+1,1,1,1,1,0,1,5
+1,1,1,1,1,0,1,5
+1,0,0,1,1,0,1,5
+0,1,1,0,0,0,1,5
+0,0,0,0,0,1,1,5
 NAME Room2 (2,11)
 WAL true
 COL 1
@@ -3940,14 +3947,14 @@ COL 1
 TIL 6v
 1,1,0,0,1,1,0,1
 1,0,1,1,1,0,0,0
-0,1,1,1,1,0,1,1
-1,0,0,0,0,0,0,1
-1,1,1,1,1,1,1,0
-1,0,0,0,0,0,1,0
-1,1,1,1,1,1,1,0
-0,0,0,0,0,0,0,0
+5,1,1,1,1,0,1,1
+1,5,5,5,5,5,5,1
+1,1,1,1,1,1,1,5
+1,5,5,5,5,5,3,5
+1,1,1,1,1,1,1,5
+5,5,5,5,5,5,5,5
 NAME Room2 (3,11)
-WAL true
+WAL false
 COL 1
 
 TIL 6w
@@ -3977,7 +3984,7 @@ WAL true
 COL 1
 
 TIL 6y
-1,1,1,1,0,0,0,0
+1,1,1,1,5,5,5,5
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
 0,0,0,0,0,0,0,0
@@ -3990,9 +3997,9 @@ WAL false
 COL 1
 
 TIL 6z
-1,1,1,0,1,0,1,1
-1,1,0,1,0,1,0,1
-1,1,0,0,0,0,0,0
+1,1,1,3,3,3,3,5
+1,1,3,3,3,3,3,3
+1,1,3,3,3,3,3,3
 0,0,0,0,0,0,0,0
 1,1,1,1,1,1,1,1
 0,0,0,0,0,0,0,0
@@ -4051,7 +4058,7 @@ NAME Room2 (9,12)
 COL 1
 
 TIL 7e
-1,1,1,1,0,0,1,0
+1,1,1,1,5,5,1,5
 1,1,1,1,1,1,1,1
 1,1,1,1,1,1,1,1
 1,1,1,1,0,0,0,1
@@ -4063,7 +4070,7 @@ NAME Room2 (10,12)
 COL 1
 
 TIL 7f
-0,1,1,1,1,1,0,1
+5,1,1,1,1,1,0,1
 1,1,1,1,1,0,0,0
 1,1,1,1,1,0,1,0
 0,1,1,1,0,0,1,1
@@ -4111,11 +4118,11 @@ NAME Room2 (0,13)
 COL 1
 
 TIL 7j
-0,1,0,1,0,1,1,1
-1,1,0,1,0,1,1,1
-0,0,1,1,0,1,1,1
-1,1,1,0,1,1,1,1
-0,0,0,1,1,1,1,1
+5,1,5,1,5,1,1,1
+1,1,5,1,5,1,1,1
+5,5,1,1,5,1,1,1
+1,1,1,5,1,1,1,1
+5,5,5,1,1,1,1,1
 0,1,1,1,1,1,1,1
 0,0,1,1,1,1,1,1
 0,0,0,1,1,1,1,1
@@ -4177,8 +4184,8 @@ TIL 7o
 1,1,1,1,0,1,1,1
 1,1,1,1,1,0,0,0
 1,1,1,1,1,1,1,1
-1,1,1,1,1,1,1,0
 1,1,1,1,1,1,1,1
+1,1,1,1,1,1,0,0
 NAME Room2 (7,13)
 COL 1
 
@@ -4189,8 +4196,8 @@ TIL 7p
 0,1,1,1,0,1,1,1
 0,0,0,0,1,1,1,1
 0,1,1,1,1,1,1,1
-0,0,1,1,1,1,1,1
-1,1,1,1,1,1,1,1
+0,1,1,1,1,1,1,1
+0,0,0,1,1,1,1,1
 NAME Room2 (8,13)
 COL 1
 
@@ -6661,6 +6668,15 @@ TIL dz
 1,1,1,0,0,1,1,1
 1,1,1,0,1,1,1,1
 1,1,1,1,1,1,1,1
+>
+5,3,3,3,3,3,5,5
+5,5,5,5,5,5,5,5
+1,1,1,1,1,1,1,1
+0,0,0,0,0,0,0,0
+0,1,0,1,1,1,1,1
+1,1,1,0,0,1,1,1
+1,1,1,0,1,1,1,1
+1,1,1,1,1,1,1,1
 COL 1
 
 TIL e0
@@ -6676,13 +6692,13 @@ COL 1
 
 TIL e1
 0,0,0,1,0,0,4,4
-0,1,0,1,1,0,4,0
-0,1,0,0,1,0,3,0
-0,0,0,1,0,0,4,0
-0,3,0,1,0,0,3,0
-0,1,0,1,1,0,4,0
-0,0,0,1,0,0,3,0
-0,0,0,0,0,0,0,0
+0,1,0,1,1,0,4,5
+0,1,0,0,1,0,3,5
+0,0,0,1,0,0,4,5
+0,3,0,1,0,0,3,5
+0,1,0,1,1,0,4,5
+0,0,0,1,0,0,0,5
+0,0,0,0,0,0,0,5
 WAL true
 COL 1
 
@@ -6779,6 +6795,93 @@ TIL e9
 1,1,1,1,1,1,1,1
 WAL true
 COL 1
+
+TIL ea
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+COL 1
+
+SPR 10
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,1,0,1,0,0,0,1
+0,1,1,1,0,0,0,1
+0,1,1,1,0,0,1,0
+0,1,1,1,1,1,0,0
+0,0,1,1,1,1,0,0
+0,0,1,0,0,1,0,0
+COL 2
+
+SPR 11
+5,5,5,5,5,5,5,3
+3,3,5,5,3,5,5,5
+5,0,0,0,5,5,0,5
+3,3,3,3,3,3,3,3
+0,0,0,0,0,0,0,0
+3,0,3,0,3,3,0,3
+0,0,0,0,0,3,0,0
+3,3,3,3,3,3,0,3
+DLG 13
+POS 6 6,4
+COL 2
+
+SPR 12
+3,3,3,3,3,5,5,3
+3,3,3,5,3,5,5,5
+3,3,3,3,5,5,5,5
+3,3,3,3,3,3,5,3
+3,3,3,5,5,5,5,5
+3,3,3,5,3,3,3,3
+3,3,3,5,3,3,3,3
+5,5,3,5,5,3,3,3
+NAME 植物精灵
+DLG 12
+POS 7 10,11
+COL 2
+
+SPR 13
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,1,0,1,0,0,0,1
+0,1,1,1,0,0,0,1
+0,1,1,1,0,0,1,0
+0,1,1,1,1,1,0,0
+0,0,1,1,1,1,0,0
+0,0,1,0,0,1,0,0
+COL 2
+
+SPR 14
+3,3,3,3,5,5,5,5
+3,3,3,3,3,3,3,3
+3,3,3,3,3,3,3,3
+0,0,0,0,0,0,0,0
+3,3,3,3,0,3,3,3
+3,0,3,0,3,3,0,0
+3,0,3,3,0,3,0,3
+0,3,3,0,3,3,0,0
+DLG 14
+POS 2 6,11
+COL 2
+
+SPR 15
+5,5,5,5,5,5,5,3
+3,3,3,3,3,3,3,3
+3,3,3,3,3,3,3,3
+0,0,0,0,0,0,0,0
+3,3,3,3,3,3,3,3
+0,0,0,0,0,0,0,0
+3,3,3,3,3,3,3,3
+0,0,0,0,0,0,0,0
+NAME 电脑
+DLG 15
+POS 7 8,11
+COL 2
 
 SPR A
 3,3,2,2,2,2,3,3
@@ -6892,8 +6995,9 @@ SPR g
 3,3,3,3,3,3,3,3
 3,0,0,3,3,3,3,3
 3,3,0,0,3,3,3,0
+NAME 全家福交互
 DLG 9
-POS 1 12,11
+POS 9 12,11
 COL 2
 
 SPR h
@@ -6910,16 +7014,16 @@ POS 1 13,11
 COL 2
 
 SPR i
-0,3,0,0,3,3,3,3
-0,3,0,0,3,3,3,3
-3,3,0,3,0,3,3,0
+0,3,0,5,3,3,3,3
+0,3,0,5,3,3,3,3
+3,3,0,3,5,3,3,5
 3,3,0,0,0,0,0,0
-3,3,0,0,3,3,3,3
-3,3,0,0,0,0,0,3
-3,3,0,3,0,0,0,3
+3,3,0,5,3,3,3,3
+3,3,0,5,5,5,5,3
+3,3,0,3,5,5,5,3
 0,0,0,3,3,3,3,3
 DLG a
-POS 1 3,11
+POS 9 3,11
 COL 2
 
 SPR j
@@ -6955,8 +7059,8 @@ SPR l
 3,3,3,0,3,3,3,3
 0,0,0,3,3,3,3,3
 3,3,3,3,3,3,3,3
-0,3,3,3,3,3,3,3
-0,0,3,3,3,3,3,3
+5,3,3,3,3,3,3,3
+5,5,3,3,3,3,3,3
 DLG f
 POS 1 2,13
 COL 2
@@ -7006,20 +7110,20 @@ SPR p
 COL 2
 
 SPR q
-0,3,3,0,0,3,0,3
-3,3,3,3,3,3,0,0
-0,0,0,0,0,0,0,0
+5,3,3,5,5,3,5,3
+3,3,3,3,3,3,5,5
+5,5,5,5,5,5,5,5
 3,3,3,3,3,3,3,3
 0,0,0,0,0,0,0,0
 3,3,3,3,3,3,0,3
 3,3,3,3,0,3,0,3
 3,3,3,3,3,3,0,3
 >
-0,3,3,3,3,3,0,3
-3,3,3,3,0,3,0,0
-0,0,3,0,0,0,3,0
-3,3,3,3,0,3,3,3
-0,0,0,3,3,3,0,0
+5,3,3,5,5,3,5,3
+3,3,3,3,3,3,5,5
+5,5,5,5,5,5,5,5
+3,3,3,3,3,3,3,3
+0,0,0,0,0,0,0,0
 3,3,3,3,3,3,0,3
 3,3,3,3,0,3,0,3
 3,3,3,3,3,3,0,3
@@ -7037,24 +7141,14 @@ SPR r
 3,3,3,0,3,3,3,30
 0,0,3,0,0,3,3,3
 DLG m
-POS 7 10,11
 COL 2
 
 SPR s
-3,3,3,3,3,3,0,3
-0,0,0,0,3,3,0,3
+3,3,3,5,3,3,0,3
+5,5,5,5,3,3,0,3
 3,3,3,3,3,3,3,3
 3,3,3,0,3,3,3,3
 0,3,3,0,0,3,0,3
-3,3,3,3,0,3,0,3
-3,3,3,3,3,3,3,3
-0,0,0,0,0,0,0,0
->
-3,3,3,3,3,3,0,3
-0,3,3,0,3,3,0,3
-3,3,0,0,0,3,3,3
-3,3,3,0,3,3,3,3
-0,3,3,3,3,3,0,3
 3,3,3,3,0,3,0,3
 3,3,3,3,3,3,3,3
 0,0,0,0,0,0,0,0
@@ -7076,17 +7170,8 @@ POS 7 6,11
 COL 2
 
 SPR u
-0,3,3,3,3,3,3,3
-0,3,3,3,3,3,3,3
-3,3,3,3,3,3,3,3
-0,0,0,0,0,0,0,0
-3,3,3,0,0,0,0,3
-0,0,0,0,0,0,0,0
-3,3,3,3,3,3,3,3
-0,0,0,0,0,0,0,0
->
-0,3,0,3,3,3,0,3
-0,3,0,0,3,0,3,0
+0,3,5,3,3,3,5,3
+0,3,5,5,3,5,3,5
 3,3,3,3,3,3,3,3
 0,0,0,0,0,0,0,0
 3,3,3,0,0,0,0,3
@@ -7094,7 +7179,7 @@ SPR u
 3,3,3,3,3,3,3,3
 0,0,0,0,0,0,0,0
 DLG q
-POS a 8,11
+POS 9 8,11
 COL 2
 
 SPR v
@@ -7135,6 +7220,33 @@ SPR x
 3,3,6,3,3,6,3,3
 NAME 爸爸影子
 POS c 10,13
+COL 2
+
+SPR y
+3,5,5,5,5,5,5,5
+5,5,3,3,3,3,3,3
+5,5,5,5,5,5,5,5
+5,3,3,3,3,3,3,3
+5,3,5,5,3,3,3,3
+5,3,3,3,3,3,3,3
+5,5,5,5,5,5,5,5
+5,3,3,3,3,3,3,3
+DLG x
+POS 2 12,4
+COL 2
+
+SPR z
+3,3,0,0,3,3,0,3
+3,0,3,3,3,0,0,0
+5,3,3,3,3,0,3,3
+3,5,5,5,5,5,5,3
+3,3,3,3,3,3,3,5
+3,5,5,5,5,5,3,53
+3,3,3,3,3,3,3,5
+5,5,5,5,5,5,5,5
+NAME 偷东西精灵
+DLG 10
+POS 7 3,11
 COL 2
 
 ITM 0
@@ -7185,22 +7297,22 @@ DLG 5
 COL 2
 
 ITM 3
-3,5,3,5,3,5,0,0
+3,5,3,5,3,5,5,5
 5,3,5,3,5,3,3,5
-5,3,5,0,5,5,0,3
-3,3,3,3,3,3,3,0
-5,3,3,3,3,3,0,5
-5,5,5,5,0,0,0,5
+5,3,5,5,5,5,5,3
+3,3,3,3,3,3,3,5
+5,3,3,3,3,3,5,5
+5,5,5,5,5,5,5,5
 3,5,3,3,3,5,3,5
 3,3,3,3,3,3,3,5
 >
 3,5,3,5,3,5,5,5
 5,3,5,3,3,3,3,5
-5,3,5,3,3,0,3,3
-3,3,3,3,0,0,0,3
-5,3,3,3,3,0,3,5
+5,3,5,3,3,5,3,3
+3,3,3,3,5,5,5,3
+5,3,3,3,3,5,3,5
 5,5,5,5,3,3,3,5
-3,5,3,3,3,5,3,0
+3,5,3,3,3,5,3,5
 3,3,3,3,3,3,3,5
 DLG b
 COL 2
@@ -7220,20 +7332,20 @@ ITM 5
 0,0,0,0,0,0,0,0
 0,3,3,3,3,3,0,3
 0,3,3,3,3,3,3,3
-0,3,3,0,0,0,0,3
-0,3,0,3,3,3,3,0
-0,3,0,3,3,3,3,0
-0,3,0,3,3,3,3,0
-0,3,3,0,0,0,0,3
+0,3,3,5,5,5,5,3
+0,3,5,3,3,3,3,5
+0,3,5,3,3,3,3,5
+0,3,5,3,3,3,3,5
+0,3,3,5,5,5,5,3
 >
 0,0,0,0,0,0,0,0
 0,3,3,3,3,3,0,3
 0,3,3,3,3,3,3,3
-0,3,3,0,0,0,0,3
-0,3,0,3,3,3,3,0
-0,3,0,3,0,0,3,0
-0,3,0,3,3,3,3,0
-0,3,3,0,0,0,0,3
+0,3,3,5,5,5,5,3
+0,3,5,3,3,3,3,5
+0,3,5,3,5,5,3,5
+0,3,5,3,3,3,3,5
+0,3,3,5,5,5,5,3
 NAME 冰箱留言交互
 DLG g
 COL 2
@@ -7281,6 +7393,132 @@ ITM 8
 7,7,7,7,7,7,7,7
 7,7,7,7,7,7,7,7
 DLG w
+COL 2
+
+ITM 9
+0,5,5,5,5,5,5,5
+5,5,0,0,0,0,0,0
+5,5,5,5,5,5,5,5
+5,0,0,0,0,0,0,0
+5,0,0,0,0,0,0,0
+5,0,0,0,0,0,0,0
+5,5,5,5,5,5,5,5
+5,0,0,0,0,0,0,0
+COL 2
+
+ITM a
+5,0,0,0,0,0,0,0
+0,5,5,5,5,5,5,0
+0,0,0,0,0,0,0,5
+0,0,0,0,0,0,0,5
+0,0,0,0,0,5,0,5
+0,0,0,0,0,0,0,5
+0,0,0,0,0,0,0,5
+5,5,5,5,5,5,5,5
+>
+0,0,0,0,0,0,0,0
+3,3,0,0,3,0,0,3
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+COL 2
+
+ITM b
+0,0,0,0,0,0,0,0
+3,3,7,0,3,0,0,3
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+>
+0,0,0,0,0,0,0,0
+3,3,0,0,3,0,0,3
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+COL 2
+
+ITM c
+3,3,0,0,3,3,0,3
+3,0,3,3,3,0,0,0
+5,3,3,3,3,0,3,3
+3,5,5,5,5,5,5,3
+3,3,3,3,3,3,3,5
+3,5,5,5,5,5,3,5
+3,3,3,3,3,3,3,5
+5,5,5,5,5,5,5,5
+NAME 父母的柜子
+DLG y
+COL 2
+
+ITM d
+3,3,3,3,3,0,0,3
+3,3,3,0,3,0,0,0
+3,3,3,3,0,0,0,0
+3,3,3,3,3,3,0,3
+3,3,3,0,0,0,0,0
+3,3,3,0,3,3,3,3
+3,3,3,0,3,3,3,3
+0,0,3,0,0,3,3,3
+NAME 植物
+DLG m
+COL 2
+
+ITM e
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+NAME Step
+COL 2
+
+ITM f
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+NAME 洗碗
+COL 2
+
+ITM g
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+NAME 作业进度
+COL 2
+
+ITM h
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0
+NAME 打电话索要生活费
+DLG 15
 COL 2
 
 DLG 0
@@ -7351,12 +7589,101 @@ DLG 9
 (A happy family photo)
 NAME sprite g dialog
 
+DLG 10
+"""
+{
+  - {item "c"} == 0 ?
+    Wow, found my confiscated toys and game console in the bag.{pg}I can sneak them back to {clr 2}hide behind my room's bookshelf{/clr}!
+    Or... maybe just leave it there.
+  - else ?
+    All that's left in the closet are some old files.
+}{item "c" 1}
+"""
+NAME 任务：偷东西
+
+DLG 11
+...
+NAME item d dialog
+
+DLG 12
+"""
+{
+  - {item "d"} == 2 ?
+    {wvy}Nice! The plants are coming back to life.{/wvy}{item "d" 3}{item "e" {{item "e"} + 1}}
+  - else ?
+    {
+      - {item "d"} == 3 ?
+        Nice! The plants are coming back to life.
+      - else ?
+        Plants almost withered, haven't watered in ages.
+        Parents so busy with work, they seem to forget about the plants.{pg}Maybe I can {clr 2}get some water from the tap right of the microwave{/clr}, to water it! {item "d" 1}
+    }
+}
+"""
+NAME sprite 12 dialog
+
+DLG 13
+"""
+{
+  - {item "d"} == 1 ?
+    Great, the water's full. {clr 2}Time to water the plants!{/clr}{item "d" 2}
+  - else ?
+    (A couple of unwashed dishes...)
+}
+"""
+NAME sprite 11 dialog
+
+DLG 14
+A photo of me on a trip abroad when I was little, on my parents' desk.
+NAME sprite 14 dialog
+
+DLG 15
+"""
+{
+  - {item "g"} == 1 ?
+    (Calling Dad ....  Connected.){clr 2}Me: {/clr}Dad, can you show me how to do this math problem?{pg}{clr 2}Dad:{/clr}Sorry, son. I can't solve this one either. Maybe you can find the answer in the textbook.{pg}{clr 2}You can find it in the bookshelf{/clr}{item "g" 2}
+  - else ?
+    {
+      - {item "h"} == 0 ?
+        {clr 2}Dad:{/clr} You can video call me with this computer. If you miss us or have any problem, just call me. {item "h" 1}
+      - else ?
+        {
+          - {item "h"} == 1 ?
+            (Calling Dad ....  Connected.){pg}{clr 2}Me: {/clr} "Dad, look, I made progress in school these days and got praise from the teacher"{pg}{clr 2}Dad:{/clr}Wow, this is impressive! You've really outdone yourself.{pg}{clr 2}Me: {/clr}Thanks, Dad. I worked really hard for it.{pg}{clr 2}Dad:{/clr} I can see that. I'll give you 50 yuan as a reward. Keep up the good work!{item "h" 2}
+          - else ?
+            Dad's busy.
+        }
+    }
+}
+"""
+NAME 打电话索要生活费 dialog
+
+DLG 16
+
+NAME 电脑 dialog
+
 DLG a
-(A bookshelf, displaying many textbooks and books required by the curriculum...)
+"""
+(A bookshelf, displaying many textbooks and books required by the curriculum...){pg}{clr 2}Me:{/clr}I always hide my secret stuff behind the bookshelf.{pg}{
+  - {item "c"} == 1 ?
+    Okay, now that I've hidden them in there, they're safe.{item "c" 2}{item "e" {{item "e"} + 1}}
+  - else ?
+    {
+      - {item "g"} == 2 ?
+        Finally I found the answer to my question in my textbook and I could get on with my homework{item "g" 3}
+    }
+}
+"""
 NAME sprite i dialog
 
 DLG b
+"""
+{clr 1}I opened my backpack and found a transcript inside....{/clr}
+I should {clr 1}have my parents sign my transcript{/clr}.
+{wvy}I'm nervous and anxious.{/wvy}
 
+My scores are still far from what a good school requires.{exit "9" 6 12}
+"""
 NAME item 3 dialog
 
 DLG c
@@ -7410,8 +7737,7 @@ DLG l
   - {item "5"} > 0 ?
     Ding! Microwave's ready.
     Mom made my fave chicken legs yum!{pg}When will Mom and Dad come back?
-    How to tell them about the test?
-    Guess I should {clr 2}do some homework{/clr}.{exit "a" 8 12 "tunnel"}
+    How to tell them about the test?{pg}I thought{clr 2} I'd wander around and do my homework later{/clr}.{item "e" {{item "e"} + 1}}
   - else ?
     Hmm, nothing to microwave.
 }
@@ -7420,13 +7746,12 @@ NAME sprite q dialog
 
 DLG m
 The flowers haven't been watered in a while...
-NAME sprite r dialog
+NAME 浇水对话
 
 DLG n
 """
 A few awards hanging there...
-
-XingXing got 'Outstanding Student' in primary school.
+XingXing got 'Outstanding Student' in primary school.{pg}Dad gave me a hundred dollars pocket money as a reward.
 """
 NAME sprite s dialog
 
@@ -7439,9 +7764,21 @@ DLG p
 
 DLG q
 """
-...{pg}Loads of homework every night, so many papers to finish.
-I often think about my uncertain future,
-the 'freedom' in college, as my parents say...{pg}I'm gonna go out and have a look.{exit "b" 3 5 "fade_b"}
+{
+  - {item "e"} <= 1 ?
+    I guess I'd better walk around and do my homework later
+  - else ?
+    {
+      - {item "g"} == 0 ?
+        It's time to start doing homework.Loads of homework every night, so many papers to finish.{pg}I came across a math problem that I couldn't solve for a long time. I don't know when my dad will be back,{pg}{clr 2}I'm going to go to my dad's room and turn on the computer to talk to him...{/clr}{item "g" 1}
+      - {item "g"} == 1 ?
+        Tips:Try opening the computer in Dad's room to call him. He should be able to help
+      - {item "g"} == 2 ?
+        Tips: Try checking the textbooks on the shelf, might find the answer there.
+      - {item "g"} == 3 ?
+        Solved the tough problem, homework's going smoother now. Don't know how long it's been, but Mom and Dad are finally back.{pg} I'll go check it out.{exit "b" 3 5 "fade_w"}
+    }
+}{}
 """
 NAME sprite u dialog
 
@@ -7456,8 +7793,13 @@ NAME 爸爸 dialog
 
 DLG s
 """
-{clr 2}Dad (to mom):{/clr} "Look at your son's grades, all we've done for him and this is what we get?"{pg}{clr 2}Mom:{/clr} What's going on? You know you won't get into college if you keep this up? No company will take you.
-{clr 2}Dad:{/clr}Do you know how much we paid for you to get into a good college? We spent a lot of money on all kinds of extracurricular classes for you, and your mom and I worked overtime all day and night just so you could have a better future.{pal "6"}{clr 2}Me:{/clr}"I know, I know you are tired, and I appreciate everything you have done for me. But I really tried my best, and I also want to be admitted to a good university, but I am really tired, and I need a rest. "{pal "8"}{clr 2}Mom:{/clr}Rest? What are you talking about resting now? Why don't you look at the kid next door who got such good grades, why can't you do the same?"{exit "3" 8 10 "fade_w"}
+{clr 2}Dad (to mom):{/clr} "Look at your son's grades!  all we've done for him and this is what we get?"{pg}{clr 2}Mom:{/clr} What's going on? With grades like these, you won't get into college or land a decent job!.{pg}{clr 2}Dad:{/clr}If I'm spending this much money, you better make something of yourself. I worked overtime day and night for your future.{pal "6"}{pg}{clr 2}Me:{/clr}I know, I know you are tired, and I appreciate everything you have done for me. But I really tried my best, and I also want to be admitted to a good university, but I am really tired, and I need a rest. {pal "8"}{pg}{clr 2}Mom:{/clr}Break? Now is not the time to rest! Look at the neighbor's kid with top grades. Why can't you be like that?{pg}{clr 2}I just can't seem to take it anymore, the endless fighting and the lack of understanding.{/clr}
+{choice
+  - I want to run away from all this 
+    {exit "3" 8 10 "fade_w"}
+  - Let a new day begin (Restart Game)
+    {end}
+}
 """
 NAME 妈妈 dialog
 
@@ -7476,6 +7818,21 @@ NAME item 7 dialog
 DLG w
 {shk}Me: You never understood me. You never entered my heart.{/shk}
 NAME item 8 dialog
+
+DLG x
+Found an old passbook, it has records of parents' earnings.{pg}Seems like their income and finances are always a secret to me.
+NAME sprite y dialog
+
+DLG y
+"""
+{item "c" 1}Wow, found my confiscated toys and game console in the bag.{pg}I can sneak them back
+{choice - -}
+"""
+NAME 偷东西任务
+
+DLG z
+
+NAME exit dialog 4
 
 VAR a
 42
@@ -19179,73 +19536,108 @@ CHAR 9835
 000000
 </script>
 
-<script id="bitsymuse">/**
-😌
-@file bitsymuse
-@summary A variety of Bitsy sound and music handlers
+<script>
+	/**
+🔀
+@file dialog choices
+@summary dialog choices
 @license MIT
-@author David Mowatt
+@author Sean S. LeBlanc
 @version 21.0.1
 @requires Bitsy 8.1
 
 
 @description
-A hack that adds a variety of audio controls, including music that changes as you move between rooms.
-If the same song is played as you move between rooms, the audio file will continue playing.
+Adds a dialog tag which allows you to present the player with dialog choices.
+Uses as an arrow cursor by default, but this can be changed in the hackOptions to use a custom bitsy sprite instead.
 
-Check out https://kool.tools/bitsy/tools/bitsymuse-ui for a tool to help configure this hack.
+Usage:
+{choice
+  - option one
+    result of picking option
+  - option two
+    result of picking option
+}
 
-If you only want to play a single song as a background track,
-check out https://candle.itch.io/bitsy-audio for a simpler solution.
+Recommended uses:
+DLG_simple_response
+"""
+Greeting text{choice
+  - Response one
+    answer to response one
+  - Response two
+    answer to response two
+}
+"""
+
+DLG_complex_response
+"""
+Greeting text{choice
+  - Response one
+    {a = 1}
+  - Response two
+    {a = 2}
+}constant part of answer{
+  - a == 1 ?
+    custom part based on response one
+  - a == 2 ?
+    custom part based on response two
+}
+"""
+
+This hack includes the "long dialog" hack so that the textbox
+automatically expands to allow for more than 2 choices.
+
+Note: it's recommended you combine this hack
+with the dialog jump hack for complex cases.
+
+Limitations:
+Each option must fit on a single line, or the cursor
+may not line up with the selected option.
+
+Checking the value of a variable set in an option
+*immediately after the choice* will not work,
+as it will evaluate before the player has selected
+an option if there is no text in-between the two.
+e.g.
+"""
+{a = 1}
+{choice
+  - Response one
+    {a = 2}
+  - Response two
+    {a = 3}
+}
+{
+  - a == 1 ?
+    this will print
+  - a == 2 ?
+    these will not
+  - a == 3 ?
+    these will not
+}
+"""
 
 HOW TO USE:
-1. Place your audio files somewhere relative to your bitsy html file (in the zip if you're uploading to itch.io)
-2. Copy-paste this script into a script tag after the bitsy source.
-3. Edit hackOptions below to set up the track list for rooms you move through.
-
-In addition to the track list, which will play audio based on the room id/name,
-you have access to the following commands you can add to dialogue:
-
-1. (soundeffectNow "<audio ID>") will play a sound without interrupting the music as soon as it is called in the dialogue
-2. (soundeffect "<audio ID>") will play a sound without interrupting the music once the dialogue box closes
-3. (musicNow "<audio ID>") will change the music as soon as it is called in the dialogue
-4. (music "<audio ID>") will change the music once the dialogue box closes
-
-You can call both musicNow and music in the same dialogue, to e.g. change the music while you speak to a character
-and then restart the regular room music once you stop speaking to them.
-You can also use a special ID ("S" by default) to Silence the music.
-
-By default, music tracks automatically restart from the beginning if you go back to a previous track.
-This can also be changed in the hackOptions below.
+1. Copy-paste into a script tag after the bitsy source
+2. Edit hackOptions below as needed
 */
 this.hacks = this.hacks || {};
 (function (exports, bitsy) {
 'use strict';
 var hackOptions = {
-	// Put entries in this list for each audio file you want to use
-	// the key will be the id needed to play it in dialog tags and the musicByRoom options below,
-	// and the value will be the properties of the corresponding <audio> tag (e.g. src, loop, volume)
-	// `src` can be either a string, or an array of strings (to support fallbacks in different formats)
-	// Note: you can add <audio> tags to the html manually if you prefer
-	audio: {
-		// Note: the entries below are examples that should be removed and replaced with your own audio files
-		'example song ID': { src: './example song filepath.mp3', loop: true },
-		'example sfx ID': { src: './example sfx filepath.mp3', volume: 0.5 },
-		'example with multiple formats': { src: ['./preferred.mp3', './fallback.ogg'] },
+	// if defined, the cursor is drawn as the sprite with the given id
+	// e.g. replace with `getCursorSprite('A')` to use the player's avatar as a cursor
+	// if not defined, uses an arrow graphic similar to the continue arrow
+	cursor: getCursorSprite(),
+	// modifies the position of the cursor
+	transform: {
+		y: 1,
+		x: 0,
 	},
-	// Put entries in this list for every room ID or name that will change the music
-	// If the player moves between rooms with the same audio ID, the music keeps playing seamlessly.
-	// Undefined rooms will keep playing whatever music they were last playing
-	musicByRoom: {
-		// Note: the entries below are examples that should be removed and replaced with your own room -> audio id mappings
-		0: 'example song ID',
-		1: 'S', // This room is silent - it will stop music when you enter (see `silenceId` below)
-		2: 'another song ID',
-		h: 'a song ID for a room with a non-numeric ID',
-		'my room': 'a song ID for a room with a user-defined name',
-	},
-	silenceId: 'S', // Use this song ID to make a room fall silent.
-	resume: false, // If true, songs will pause/resume on change; otherwise, they'll stop/play (doesn't affect sound effects)
+	// long dialog options
+	minRows: 1,
+	maxRows: 3,
 };
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
@@ -19545,167 +19937,367 @@ function addDualDialogTag(tag, fn) {
 }
 
 /**
-@file utils
-@summary miscellaneous bitsy utilities
+ * Helper for printing a paragraph break inside of a dialog function.
+ * Adds the function `AddParagraphBreak` to `DialogBuffer`
+ */
+
+inject(/(this\.AddLinebreak = )/, 'this.AddParagraphBreak = function() { buffer.push( [[]] ); isActive = true; };\n$1');
+
+/**
+📃
+@file paragraph-break
+@summary Adds paragraph breaks to the dialogue parser
+@license WTFPL (do WTF you want)
+@author Sean S. LeBlanc, David Mowatt
+@version 21.0.1
+@requires Bitsy 8.1
+
+
+@description
+Adds a (p) tag to the dialogue parser that forces the following text to
+start on a fresh dialogue screen, eliminating the need to spend hours testing
+line lengths or adding multiple line breaks that then have to be reviewed
+when you make edits or change the font size.
+
+Note: Bitsy has a built-in implementation of paragraph-break as of 7.0;
+before using this, you may want to check if it fulfills your needs.
+
+Usage: (p)
+
+Example: I am a cat(p)and my dialogue contains multitudes
+
+HOW TO USE:
+  1. Copy-paste this script into a new script tag after the Bitsy source code.
+     It should appear *before* any other mods that handle loading your game
+     data so it executes *after* them (last-in first-out).
+
+NOTE: This uses parentheses "()" instead of curly braces "{}" around function
+      calls because the Bitsy editor's fancy dialog window strips unrecognized
+      curly-brace functions from dialog text. To keep from losing data, write
+      these function calls with parentheses like the examples above.
+
+      For full editor integration, you'd *probably* also need to paste this
+      code at the end of the editor's `bitsy.js` file. Untested.
+*/
+
+// Adds the actual dialogue tag. No deferred version is required.
+addDialogTag('p', function (environment, parameters, onReturn) {
+	environment.GetDialogBuffer().AddParagraphBreak();
+	onReturn(null);
+});
+// End of (p) paragraph break mod
+
+/**
+📜
+@file long dialog
+@summary put more words onscreen
+@license MIT
 @author Sean S. LeBlanc
 @version 21.0.1
 @requires Bitsy 8.1
 
+
+@description
+Makes the dialog box variable in height, allowing it to expand as needed.
+
+Minimum and maximum size are configurable.
+Cheat sheet:
+	2: bitsy default
+	8: reaches just below the halfway mark
+	16: roughly the max of the original bitsy margins
+	19: max before cutting off text
+
+Note: this hack also includes the paragraph break hack
+A common pattern in bitsy is using intentional whitespace to force new dialog pages,
+but the long dialog hack makes that look awkward since the text box expands.
+The paragraph break hack lets you get around this by using a (p) tag to immediately end the current page.
+
+There is also a dialog tag that lets you change the size ingame.
+
+Usage:
+	(textboxsize "<min>,<max>")
+	(textboxsizeNow "<min>,<max>")
+
+Examples:
+	(textboxsize "2,6")
+	(textboxsizeNow "2,2")
+
+HOW TO USE:
+	1. Copy-paste this script into a new script tag after the Bitsy source code.
+	2. edit hackOptions below as needed
 */
 
-/**
- * Helper for getting room by name or id
- * @param {string} name id or name of room to return
- * @return {string} room, or undefined if it doesn't exist
- */
-function getRoom(name) {
-	var id = Object.prototype.hasOwnProperty.call(bitsy.room, name) ? name : bitsy.names.room[name];
-	return bitsy.room[id];
+var hackOptions$1 = {
+	minRows: 2,
+	maxRows: 4,
+};
+
+kitsy.longDialogOptions = hackOptions$1;
+
+// override textbox height to be dynamic based on row count
+inject(
+	/textboxInfo\.height = .+;/,
+	`Object.defineProperty(textboxInfo, 'height', {
+	get() { return textboxInfo.padding_vert + (textboxInfo.padding_vert + relativeFontHeight()) * Math.max(window.kitsy.longDialogOptions.minRows, dialogBuffer.CurPage().indexOf(dialogBuffer.CurRow())+Math.sign(dialogBuffer.CurCharCount())) + textboxInfo.arrow_height; }
+})`
+);
+// export textbox info
+inject(/(var font = null;)/, 'this.textboxInfo = textboxInfo;$1');
+// rewrite hard-coded row limit
+inject(/(else if \(curRowIndex )== 0/g, '$1 < window.kitsy.longDialogOptions.maxRows - 1');
+inject(/(if \(lastPage\.length) <= 1/, '$1 < window.kitsy.longDialogOptions.maxRows');
+
+// update textbox size
+var ph;
+function updateTextbox() {
+	var h = bitsy.dialogRenderer.textboxInfo.height;
+	if (h === ph) return;
+	ph = h;
+	var textScale = bitsy.bitsy.textMode() === bitsy.bitsy.TXT_LOREZ ? 1 : 2;
+	bitsy.bitsy.textbox(undefined, undefined, undefined, undefined, h * textScale);
 }
+before('dialogRenderer.Draw', updateTextbox);
 
-function createAudio(id, options) {
-	// delete duplicate
-	var el = document.getElementById(id);
-	if (el) el.remove();
+// reserve textbox memory on startup to avoid flickering
+// when it expands dynamically
+after('dialogRenderer.SetFont', function () {
+	// eslint-disable-next-line no-underscore-dangle
+	var t = bitsy.bitsy._dump()[bitsy.bitsy.TEXTBOX];
+	t.length = Math.max(t.length, 256000);
+});
 
-	// create element
-	el = document.createElement('audio');
-	var src = options.src;
-	el.id = id;
-	Object.assign(el, options);
-	if (typeof src !== 'string') {
-		el.removeAttribute('src');
-		src.forEach(function (s) {
-			var sourceEl = document.createElement('source');
-			sourceEl.src = s;
-			sourceEl.type = 'audio/' + s.split('.').pop();
-			el.appendChild(sourceEl);
-		});
+addDualDialogTag('textboxsize', function (environment, parameters) {
+	if (!parameters[0]) {
+		throw new Error('{textboxsize} was missing parameters! Usage: {textboxsize "minrows, maxrows"}');
 	}
-	document.body.appendChild(el);
-	return el;
-}
+	// parse parameters
+	var params = parameters[0].split(/,\s?/);
+	var min = parseInt(params[0], 10);
+	var max = parseInt(params[1], 10);
+	hackOptions$1.minRows = min;
+	hackOptions$1.maxRows = max;
+
+	updateTextbox();
+});
 
 
 
 
+hackOptions$1.minRows = hackOptions.minRows;
+hackOptions$1.maxRows = hackOptions.maxRows;
 
-var audioElementsById = {};
-var currentMusic;
-var roomMusicFlag = null;
-
-after('load_game', function () {
-	var room;
-	// expand the map to include ids of rooms listed by name
-	Object.entries(hackOptions.musicByRoom).forEach(function (entry) {
-		room = getRoom(entry[0]);
-		if (room) {
-			hackOptions.musicByRoom[room.id] = entry[1];
+var dialogChoices = {
+	choice: 0,
+	choices: [],
+	choicesActive: false,
+	moved: true,
+	handleInput: function (dialogBuffer) {
+		if (!this.choicesActive) {
+			return false;
 		}
-	});
-	// add audio tags from options
-	Object.entries(hackOptions.audio).forEach(function (entry) {
-		audioElementsById[entry[0]] = createAudio(entry[0], entry[1]);
-	});
-
-	// handle autoplay restrictions by playing then pausing
-	// every audio element on the first user interaction
-	function handleAutoPlayRestrictions() {
-		Object.values(audioElementsById).forEach(function (audio) {
-			audio.play();
-			// let the current song play
-			if (currentMusic === audio.id) {
-				return;
+		var l = Math.max(this.choices.length, 1);
+		// navigate
+		if (bitsy.bitsy.button(bitsy.bitsy.BTN_UP)) {
+			this.choice -= 1;
+			if (this.choice < 0) {
+				this.choice += l;
 			}
-			audio.pause();
-			audio.currentTime = 0;
+			return false;
+		}
+		if (bitsy.bitsy.button(bitsy.bitsy.BTN_DOWN)) {
+			this.choice = (this.choice + 1) % l;
+			return false;
+		}
+		// select
+		if (bitsy.bitsy.button(bitsy.bitsy.BTN_RIGHT)) {
+			// evaluate choice
+			this.choices[this.choice]();
+			// reset
+			this.choice = 0;
+			this.choices = [];
+			this.choicesActive = false;
+			return true;
+		}
+		return false;
+	},
+};
+
+bitsy.dialogChoices = dialogChoices;
+
+function getCursorSprite(cursor) {
+	return cursor
+		? `renderer.GetDrawingSource(sprite['${cursor}'].drw)[sprite['${cursor}'].animation.frameIndex]`
+		: `[
+		[0, 0, 0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0, 0],
+		[0, 1, 0, 0, 0, 0, 0, 0],
+		[0, 1, 1, 0, 0, 0, 0, 0],
+		[0, 1, 1, 1, 0, 0, 0, 0],
+		[0, 1, 1, 0, 0, 0, 0, 0],
+		[0, 1, 0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0, 0]
+	]`;
+}
+
+// parsing
+// (adds a new sequence node type)
+inject(/(\|\| str === "shuffle")/, '$1 || str === "choice"');
+inject(
+	/(state\.curNode\.AddChild\(new ShuffleNode\(options\)\);\n.*})/,
+	`$1
+else if(sequenceType === "choice") {
+	state.curNode.AddChild(new ChoiceNode(options));
+}`
+);
+
+inject(
+	/(function ShuffleNode\(options\) {)/,
+	`
+function ChoiceNode(options) {
+	Object.assign( this, new TreeRelationship() );
+	Object.assign( this, new SequenceBase() );
+	this.type = "choice";
+	this.options = options;
+	options.forEach(function(option){
+		var br = option.children.find(function(child){ return child.name === 'br'; });
+		if (!br) {
+			option.onSelect = [];
+			return;
+		}
+		var idx = option.children.indexOf(br);
+		option.onSelect = option.children.slice(idx+1);
+		option.children = option.children.slice(0, idx);
+	});
+
+	this.Eval = function(environment,onReturn) {
+		var lastVal = null;
+		var i = 0;
+		var prevRows = window.kitsy.longDialogOptions.maxRows;
+		window.kitsy.longDialogOptions.maxRows = Infinity;
+		function evalChildren(children,done) {
+			if(i < children.length) {
+				children[i].Eval(environment, function(val) {
+					if (i === children.length - 1) {
+						environment.GetDialogBuffer().AddParagraphBreak();
+						environment.GetDialogBuffer().AddScriptReturn(function () {
+							// end dialog if there's no content after the choice
+							if (environment.GetDialogBuffer().CurCharCount() <= 1) {
+								environment.GetDialogBuffer().EndDialog();
+							}
+						});
+					} else {
+						environment.GetDialogBuffer().AddLinebreak();
+					}
+					lastVal = val;
+					i++;
+					evalChildren(children,done);
+				});
+			}
+			else {
+				done();
+				window.dialogChoices.choicesActive = true;
+			}
+		}
+		window.dialogChoices.choices = this.options.map(function(option){
+			return function(){
+				window.kitsy.longDialogOptions.maxRows = prevRows;
+				option.onSelect.forEach(function(child){
+					child.Eval(environment, function(){});
+				});
+			};
 		});
-		document.body.removeEventListener('pointerup', handleAutoPlayRestrictions);
-		document.body.removeEventListener('keydown', handleAutoPlayRestrictions);
+		if (environment.GetDialogBuffer().CurCharCount() > 0) {
+			environment.GetDialogBuffer().AddParagraphBreak();
+		}
+		evalChildren(this.options, function () {
+			onReturn(lastVal);
+		});
 	}
-
-	document.body.addEventListener('pointerup', handleAutoPlayRestrictions);
-	document.body.addEventListener('keydown', handleAutoPlayRestrictions);
-});
-
-function getAudio(id) {
-	var el = audioElementsById[id] || (audioElementsById[id] = document.getElementById(id));
-	if (!el) {
-		throw new Error("bitsymuse tried to use audio with id '" + id + "' but couldn't find one on the page!");
-	}
-	return el;
 }
+$1`
+);
 
-function playSound(soundParam) {
-	if (!soundParam) {
-		return;
-	}
-	getAudio(soundParam).play();
-}
-
-function changeMusic(newMusic) {
-	var audio;
-	// if we didn't get new music,
-	// or the music didn't change,
-	// there's no work to be done
-	if (!newMusic || newMusic === currentMusic) {
-		return;
-	}
-
-	// stop old music
-	if (currentMusic && currentMusic !== hackOptions.silenceId) {
-		audio = getAudio(currentMusic);
-		audio.pause();
-		if (!hackOptions.resume) {
-			audio.currentTime = 0.0;
+// rendering
+// (re-uses existing arrow image data,
+// but draws rotated to point at text)
+inject(
+	/(this\.DrawNextArrow = )/,
+	`
+this.DrawChoiceArrow = function() {
+	var text_scale = getTextScale();
+	var textboxScaleW = textboxInfo.width * text_scale;
+	var textboxScaleH = textboxInfo.height * text_scale;
+	var rows = ${hackOptions.cursor};
+	var top = (${hackOptions.transform.y} + window.dialogChoices.choice * (textboxInfo.padding_vert + relativeFontHeight())) * text_scale;
+	var left = ${hackOptions.transform.x}*text_scale;
+	for (var y = 0; y < rows.length; y++) {
+		var cols = rows[y];
+		for (var x = 0; x < cols.length; x++) {
+			if (cols[x]) {
+				//scaling nonsense
+				for (var sy = 0; sy < text_scale; sy++) {
+					for (var sx = 0; sx < text_scale; sx++) {
+						var px = left + (x * text_scale) + sx;
+						var py = top + (y * text_scale) + sy;
+						bitsy.set(bitsy.TEXTBOX, (py * textboxScaleW) + px, textArrowIndex);
+					}
+				}
+			}
 		}
 	}
-
-	// start new music
-	currentMusic = newMusic;
-	// special case: don't start anything new
-	if (newMusic === hackOptions.silenceId) {
-		return;
-	}
-	getAudio(newMusic).play();
+};
+$1`
+);
+inject(
+	/(if \(buffer.CanContinue\(\) && shouldDrawArrow\) {)/,
+	`
+if (window.dialogChoices.choicesActive) {
+	this.DrawChoiceArrow();
 }
+$1`
+);
 
-after('drawRoom', function () {
-	if (roomMusicFlag !== bitsy.state.room) {
-		changeMusic(hackOptions.musicByRoom[bitsy.state.room]);
-		roomMusicFlag = bitsy.state.room;
-	}
-});
+// interaction
+// (overrides the dialog skip/page flip)
+inject(/(dialogBuffer.CanContinue)/, `(!window.dialogChoices.choicesActive || window.dialogChoices.handleInput(dialogBuffer)) && $1`);
+inject(
+	/(this\.CanContinue = function\(\) {)/,
+	`$1
+if(window.dialogChoices.choicesActive){
+	return false;
+}
+`
+);
 
-// Implement the dialog functions
-addDualDialogTag('music', function (environment, parameters) {
-	if (!parameters[0]) {
-		throw new Error('{music/musicNow} was missing parameters! Usage: {music/musicNow "track name"}');
-	}
-	changeMusic(parameters[0]);
-});
-
-addDualDialogTag('soundeffect', function (environment, parameters) {
-	if (!parameters[0]) {
-		throw new Error('{soundeffect/soundeffectNow} was missing parameters! Usage: {soundeffect/soundeffectNow "track name"}');
-	}
-	playSound(parameters[0]);
-});
-// End of (music) dialog function mod
+// force redrawing textbox to avoid flickering issues
+inject(/shouldClearTextbox = false;/, '');
+inject(/char.redraw = false;/, '');
+inject(/shouldDrawArrow = false;/, '');
 
 exports.hackOptions = hackOptions;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-})(this.hacks.bitsymuse = this.hacks.bitsymuse || {}, window);
-    </script></head>
+})(this.hacks.dialog_choices = this.hacks.dialog_choices || {}, window);
+</script>
+
+</head>
 
 
 <!-- DOCUMENT BODY -->
-<body onload="startExportedGame()">
+<body onload='startExportedGame()'>
 	<!-- GAME CANVAS -->
-	<canvas id="game"></canvas>
+	<canvas id='game'></canvas>
+<audio id="bgm1.mp3" src="bgm1.mp3" autoplay loop></audio> 
+<script>
+function unmute() {
+    document.getElementById("bgm1.mp3").play();
+    document.removeEventListener('pointerup', unmute);
+    document.removeEventListener('keydown', unmute);
+}
+document.addEventListener('pointerup', unmute);
+document.addEventListener('keydown', unmute);
+</script></body>
 
 
-
-</body></html>
+</html>
